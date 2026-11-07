@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "repository": "https://github.com/NSRingo/News",
+  "defaults": {
+    "author": "VirgilClyne / NSRingo",
+    "source": "NSRingo",
+    "license": "Apache-2.0",
+    "homepage": "https://github.com/NSRingo/News",
+    "license_url": "https://raw.githubusercontent.com/NSRingo/News/main/LICENSE"
+  },
+  "discovery": {
+    "type": "releases"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "repository": "https://github.com/fmz200/wool_scripts",
+  "defaults": {
+    "author": "奶思",
+    "source": "奶思",
+    "author_homepage": "https://github.com/fmz200",
+    "homepage": "https://github.com/fmz200/wool_scripts",
+    "license": "GPL-3.0",
+    "content_policy": {
+      "restricted_text": "include",
+      "reason": "维护者要求继续收录奶思来源；保留原作者署名与捐助入口，许可按原文记录，不表示已获上游授权"
+    },
+    "category": "应用增强",
+    "license_url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/LICENSE"
+  },
+  "discovery": {
+    "type": "repository",
+    "ref": "main",
+    "select": [
+      "Loon/plugin/",
+      "Loon/script/"
+    ]
+  }
+}

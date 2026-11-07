@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "repository": "https://github.com/NSRingo/Maps",
+  "defaults": {
+    "author": "VirgilClyne / NSRingo",
+    "source": "NSRingo",
+    "license": "Apache-2.0",
+    "homepage": "https://github.com/NSRingo/Maps",
+    "license_url": "https://raw.githubusercontent.com/NSRingo/Maps/main/LICENSE"
+  },
+  "discovery": {
+    "type": "repository",
+    "ref": "main",
+    "select": [
+      "modules/"
+    ]
+  }
+}

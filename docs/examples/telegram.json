@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "repository": "https://t.me/ChannelName",
+  "defaults": {},
+  "discovery": {
+    "type": "telegram",
+    "max_pages": null
+  }
+}

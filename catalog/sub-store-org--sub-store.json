@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "repository": "https://github.com/sub-store-org/Sub-Store",
+  "defaults": {
+    "author": "Sub-Store",
+    "source": "Sub-Store",
+    "author_homepage": "https://github.com/sub-store-org",
+    "homepage": "https://github.com/sub-store-org/Sub-Store",
+    "license": "AGPL-3.0",
+    "license_url": "https://github.com/sub-store-org/Sub-Store/blob/master/LICENSE"
+  },
+  "discovery": {
+    "type": "repository",
+    "ref": "master",
+    "select": [
+      "config/"
+    ]
+  }
+}

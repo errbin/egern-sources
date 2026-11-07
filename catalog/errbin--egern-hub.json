@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "repository": "local",
+  "defaults": {
+    "author": "ErrBin",
+    "license": "MIT",
+    "source": "ErrBin",
+    "author_homepage": "https://github.com/errbin",
+    "author_avatar": "https://github.com/errbin.png?size=96"
+  },
+  "discovery": {
+    "type": "local",
+    "directory": "sources/ErrBin/egern-hub",
+    "rule_policy": "DIRECT",
+    "rule_policies": [
+      {
+        "content_pattern": "^#.*RFC 2606",
+        "policy": "REJECT"
+      }
+    ]
+  }
+}
