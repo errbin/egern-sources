@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "repository": "https://github.com/k6nfmm7dbr-commits/hongguo-lite",
+  "defaults": {
+    "author": "Minis",
+    "license": "MIT",
+    "homepage": "https://github.com/k6nfmm7dbr-commits/hongguo-lite",
+    "source": "Minis",
+    "license_url": "https://raw.githubusercontent.com/k6nfmm7dbr-commits/hongguo-lite/main/LICENSE"
+  },
+  "discovery": {
+    "type": "repository",
+    "ref": "main",
+    "select": [
+      "egern/"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "repository": "https://github.com/app2smile/rules",
+  "defaults": {
+    "author": "app2smile",
+    "source": "app2smile",
+    "author_homepage": "https://github.com/app2smile",
+    "homepage": "https://github.com/app2smile/rules",
+    "license": "MIT",
+    "license_url": "https://raw.githubusercontent.com/app2smile/rules/master/LICENSE.md",
+    "category": "应用增强",
+    "policy": "REJECT-DROP"
+  },
+  "discovery": {
+    "type": "repository",
+    "ref": "master",
+    "rule_include": [
+      "rule/*.list"
+    ]
+  }
+}

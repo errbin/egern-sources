@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "repository": "local",
+  "defaults": {
+    "author": "Egern Hub",
+    "license": "MIT",
+    "source": "Egern Hub",
+    "author_homepage": "https://github.com/egernhub",
+    "author_avatar": "https://github.com/egernhub.png?size=96"
+  },
+  "discovery": {
+    "type": "local",
+    "directory": "sources/egernhub/egern-hub",
+    "rule_policy": "DIRECT",
+    "rule_policies": [
+      {
+        "content_pattern": "^#.*RFC 2606",
+        "policy": "REJECT"
+      }
+    ]
+  }
+}

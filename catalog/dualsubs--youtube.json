@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "repository": "https://github.com/DualSubs/YouTube",
+  "defaults": {
+    "author": "VirgilClyne / DualSubs",
+    "source": "DualSubs",
+    "license": "Apache-2.0",
+    "homepage": "https://github.com/DualSubs/YouTube",
+    "license_url": "https://raw.githubusercontent.com/DualSubs/YouTube/main/LICENSE"
+  },
+  "discovery": {
+    "type": "releases"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "repository": "https://github.com/NSRingo/TestFlight",
+  "defaults": {
+    "author": "VirgilClyne / NSRingo",
+    "source": "NSRingo",
+    "license": "Apache-2.0",
+    "homepage": "https://github.com/NSRingo/TestFlight",
+    "license_url": "https://raw.githubusercontent.com/NSRingo/TestFlight/main/LICENSE"
+  },
+  "discovery": {
+    "type": "releases"
+  }
+}

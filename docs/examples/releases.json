@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "repository": "https://github.com/Author/Repo",
+  "defaults": {
+    "author": "作者昵称",
+    "author_avatar": "https://example.org/avatar.png"
+  },
+  "discovery": {
+    "type": "releases"
+  }
+}

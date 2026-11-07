@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "repository": "https://github.com/Author/Repo",
+  "defaults": {},
+  "discovery": {
+    "type": "repository",
+    "ref": "main",
+    "select": [
+      "modules/",
+      "scripts/"
+    ]
+  }
+}

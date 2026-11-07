@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "repository": "local",
+  "defaults": {
+    "author": "作者昵称",
+    "license": "MIT"
+  },
+  "discovery": {
+    "type": "local",
+    "directory": "sources/Author/Repo",
+    "rule_policy": "DIRECT"
+  }
+}

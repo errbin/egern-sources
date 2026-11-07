@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "repository": "https://t.me/Yixiexiexzjian",
+  "defaults": {},
+  "discovery": {
+    "type": "telegram",
+    "max_pages": null,
+    "exclude_repositories": [
+      "blackmatrix7/ios_rule_script",
+      "fmz200/wool_scripts",
+      "Script-Hub-Org/Script-Hub"
+    ],
+    "content": "widgets"
+  }
+}

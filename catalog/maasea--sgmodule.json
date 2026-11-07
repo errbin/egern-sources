@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "repository": "https://github.com/Maasea/sgmodule",
+  "defaults": {
+    "author": "Maasea",
+    "source": "Maasea",
+    "author_homepage": "https://github.com/Maasea",
+    "homepage": "https://github.com/Maasea/sgmodule",
+    "license": "Apache-2.0",
+    "license_url": "https://raw.githubusercontent.com/Maasea/sgmodule/master/LICENSE",
+    "category": "应用增强"
+  },
+  "discovery": {
+    "type": "repository",
+    "ref": "master"
+  }
+}
