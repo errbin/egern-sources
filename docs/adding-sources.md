@@ -129,7 +129,7 @@ App 图标优先从原作者声明、App Store 与官网自动匹配，保留出
 ## 验证与提交
 
 ```sh
-.venv/bin/python -m unittest tests.test_catalog tests.test_source_catalog -q
+.venv/bin/python -m unittest discover -s tests -p 'test_catalog_standalone.py' -q
 .venv/bin/python build.py --verify
 .venv/bin/python -m tools.egern_hub.serve
 ```
