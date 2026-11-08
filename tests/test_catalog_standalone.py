@@ -1,3 +1,4 @@
+import json
 import tempfile
 from pathlib import Path
 import unittest
@@ -6,6 +7,13 @@ from tools.egern_hub.source_catalog import normalize
 from tools.validate import validate
 
 class StandaloneCatalogTests(unittest.TestCase):
+    def test_errbin_resources_link_to_errbin_repository(self):
+        root=Path(__file__).resolve().parents[1]
+        manifest=normalize(json.loads((root/'catalog/errbin--egern-hub.json').read_text()))
+        defaults=manifest['defaults']
+        self.assertEqual(defaults['author_homepage'],'https://github.com/errbin')
+        self.assertEqual(defaults['homepage'],'https://github.com/errbin')
+
     def test_public_catalog_is_valid_without_converter(self):
         self.assertGreater(validate(Path(__file__).resolve().parents[1]),0)
     def test_initializer_accepts_directory_and_rejects_duplicates(self):
