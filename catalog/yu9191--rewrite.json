@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "repository": "https://github.com/ios151/Rewrite",
+  "repository": "https://github.com/Yu9191/Rewrite",
   "defaults": {
     "author": "baby",
     "source": "baby",
-    "homepage": "https://github.com/ios151/Rewrite",
+    "homepage": "https://github.com/Yu9191/Rewrite",
     "license": "未声明许可证",
-    "author_homepage": "https://github.com/ios151",
+    "author_homepage": "https://github.com/Yu9191",
     "author_avatar_channel": "https://t.me/Jsforbaby"
   },
   "discovery": {
