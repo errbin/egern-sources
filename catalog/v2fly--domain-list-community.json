@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "repository": "https://github.com/v2fly/domain-list-community",
+  "defaults": {
+    "author": "V2Fly / V2Ray",
+    "source": "V2Fly",
+    "author_homepage": "https://github.com/v2fly",
+    "homepage": "https://github.com/v2fly/domain-list-community",
+    "license": "MIT",
+    "license_url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/LICENSE",
+    "category": "网络分流",
+    "policy": "PROXY"
+  },
+  "discovery": {
+    "type": "repository",
+    "ref": "master",
+    "rule_include": [
+      "data/*"
+    ]
+  }
+}
