@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "repository": "https://github.com/ACL4SSR/ACL4SSR",
+  "defaults": {
+    "author": "ACL4SSR",
+    "source": "ACL4SSR",
+    "author_homepage": "https://github.com/ACL4SSR",
+    "homepage": "https://github.com/ACL4SSR/ACL4SSR",
+    "license": "CC-BY-SA-4.0",
+    "license_url": "https://github.com/ACL4SSR/ACL4SSR#license",
+    "category": "网络分流",
+    "policy": "PROXY"
+  },
+  "discovery": {
+    "type": "repository",
+    "ref": "master",
+    "rule_include": [
+      "Clash/Ruleset/*.list"
+    ]
+  }
+}
