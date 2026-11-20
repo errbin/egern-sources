@@ -27,3 +27,9 @@ class StandaloneCatalogTests(unittest.TestCase):
             self.assertEqual(validate(folder),1)
     def test_manual_conversion_status_is_rejected(self):
         with self.assertRaises(ValueError):normalize({'version':2,'repository':'https://github.com/A/B','defaults':{},'discovery':{'type':'repository','ref':'main'},'converted':True})
+
+    def test_repository_merge_flag_requires_a_boolean(self):
+        data={'version':2,'repository':'https://github.com/A/B','defaults':{},
+              'discovery':{'type':'repository','ref':'main','merge_same_repository':'yes'}}
+        with self.assertRaisesRegex(ValueError,'merge_same_repository'):
+            normalize(data)

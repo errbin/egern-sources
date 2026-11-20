@@ -14,8 +14,10 @@
   "discovery": {
     "type": "repository",
     "ref": "master",
+    "merge_same_repository": true,
     "rule_include": [
-      "Clash/Ruleset/*.list"
+      "Clash/Ruleset/*.list",
+      "Clash/*.list"
     ]
   }
 }

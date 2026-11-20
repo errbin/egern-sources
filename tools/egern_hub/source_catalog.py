@@ -61,13 +61,15 @@ def normalize(data):
     kind=spec.get('type','repository')
     if kind not in {'repository','releases','telegram','local'}:
         raise ValueError('未知 discovery.type：'+str(kind))
-    allowed={'repository':{'type','ref','select','include','rule_include'},'releases':{'type'},
+    allowed={'repository':{'type','ref','select','include','rule_include','merge_same_repository'},'releases':{'type'},
         'telegram':{'type','max_pages','exclude_repositories','content'},
         'local':{'type','directory','rule_policy','rule_policies'}}
     if set(spec)-allowed[kind]:raise ValueError('discovery 包含不支持的字段')
     if kind=='repository':
         if 'select' in spec and (not isinstance(spec['select'],list) or not spec['select']):
             raise ValueError('select 必须是非空目录数组')
+        if 'merge_same_repository' in spec and not isinstance(spec['merge_same_repository'],bool):
+            raise ValueError('merge_same_repository 必须是布尔值')
         for field in ['include','rule_include']:
             if any(not any(c in pattern for c in '*?[') for pattern in spec.get(field,[])):
                 raise ValueError(field+' 必须使用通用 glob，不能逐文件登记')

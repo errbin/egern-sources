@@ -13,7 +13,9 @@ class ACL4SSRCatalogTests(unittest.TestCase):
         self.assertEqual(manifest['version'], 1)
         self.assertEqual(manifest['repository'], 'https://github.com/ACL4SSR/ACL4SSR')
         self.assertEqual(manifest['discovery']['ref'], 'master')
-        self.assertEqual(manifest['discovery']['rule_include'], ['Clash/Ruleset/*.list'])
+        self.assertEqual(manifest['discovery']['rule_include'],
+                         ['Clash/Ruleset/*.list', 'Clash/*.list'])
+        self.assertTrue(manifest['discovery']['merge_same_repository'])
         self.assertEqual(manifest['defaults']['license'], 'CC-BY-SA-4.0')
         self.assertEqual(manifest['defaults']['category'], '网络分流')
         self.assertEqual(manifest['defaults']['policy'], 'PROXY')
