@@ -8,7 +8,8 @@
     "exclude_repositories": [
       "blackmatrix7/ios_rule_script",
       "fmz200/wool_scripts",
-      "Script-Hub-Org/Script-Hub"
+      "Script-Hub-Org/Script-Hub",
+      "sub-store-org/Sub-Store"
     ],
     "content": "widgets"
   }
