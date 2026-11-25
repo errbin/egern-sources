@@ -11,8 +11,12 @@ class StandaloneCatalogTests(unittest.TestCase):
         root=Path(__file__).resolve().parents[1]
         manifest=normalize(json.loads((root/'catalog/egernhub--egern-hub.json').read_text()))
         defaults=manifest['defaults']
+        self.assertEqual(defaults['author'],'Egern Hub')
+        self.assertEqual(defaults['source'],'Egern Hub')
         self.assertEqual(defaults['author_homepage'],'https://github.com/egernhub')
         self.assertEqual(defaults['homepage'],'https://github.com/egernhub')
+        self.assertEqual(defaults['author_avatar'],'https://github.com/egernhub.png?size=96')
+        self.assertEqual(manifest['discovery']['directory'],'sources/egernhub/egern-hub')
 
     def test_public_catalog_is_valid_without_converter(self):
         self.assertGreater(validate(Path(__file__).resolve().parents[1]),0)
